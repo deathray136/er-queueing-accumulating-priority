@@ -1,0 +1,80 @@
+
+A. Aging-rate sweep (exponential service, mean 5 min, daily arrival profile)
+                       hi mean  hi p95 lo mean  lo p95  lo max
+fifo                    164.0   392.0   162.6   394.0     575
+apq a=0.0                 6.8    23.0   230.5   497.0     694
+apq a=0.005              47.9   214.0   212.8   453.0     620
+apq a=0.01               95.5   307.0   192.1   427.0     607
+apq a=0.02              127.5   350.0   178.3   411.0     587
+apq a=0.05              149.1   376.0   169.0   401.0     575
+apq a=0.1               156.8   385.0   165.7   397.0     575
+apq a=0.2               160.7   389.0   164.0   396.0     575
+apq a=0.5               163.2   392.0   162.9   394.0     575
+
+B. Load sweep (arrival scale; scale 1.0 = original profile, mean utilisation 0.875)
+
+scale 0.5  (mean utilisation 0.44, peak 0.75)
+                       hi mean  hi p95 lo mean  lo p95  lo max
+FIFO                      9.5    43.0     9.8    44.0     131
+Strict priority           3.3    15.0    12.4    57.0     181
+APQ a=0.02                4.2    19.0    12.0    56.0     147
+APQ a=0.05                6.1    28.0    11.2    49.0     133
+Fast-track (equal cap.)   23.1   103.0    13.6    59.0     174
+
+scale 0.7  (mean utilisation 0.61, peak 1.05)
+                       hi mean  hi p95 lo mean  lo p95  lo max
+FIFO                     39.0   132.0    40.1   136.0     269
+Strict priority           5.0    18.0    54.1   183.0     322
+APQ a=0.02               20.6    93.0    47.7   151.0     272
+APQ a=0.05               30.4   118.0    43.6   141.0     272
+Fast-track (equal cap.)   56.0   198.0    43.9   159.0     323
+
+scale 0.85  (mean utilisation 0.74, peak 1.27)
+                       hi mean  hi p95 lo mean  lo p95  lo max
+FIFO                     91.9   249.3    92.9   252.0     384
+Strict priority           6.0    20.0   129.3   339.0     441
+APQ a=0.02               63.5   210.0   104.9   271.0     393
+APQ a=0.05               80.0   233.3    97.9   260.0     389
+Fast-track (equal cap.)  101.5   325.0    91.6   278.0     486
+
+scale 1.0  (mean utilisation 0.88, peak 1.50)
+                       hi mean  hi p95 lo mean  lo p95  lo max
+FIFO                    162.2   383.0   160.0   384.0     554
+Strict priority           6.7    22.0   225.5   480.0     607
+APQ a=0.02              125.6   341.0   175.4   400.0     558
+APQ a=0.05              147.3   364.4   166.3   391.0     558
+Fast-track (equal cap.)  157.0   417.4   155.1   394.0     634
+
+scale 1.15  (mean utilisation 1.01, peak 1.72)
+                       hi mean  hi p95 lo mean  lo p95  lo max
+FIFO                    241.0   539.0   237.0   538.0     723
+Strict priority           7.7    26.0   337.9   641.0     779
+APQ a=0.02              197.3   497.0   255.8   556.0     736
+APQ a=0.05              223.5   523.0   244.5   545.0     723
+Fast-track (equal cap.)  228.8   578.0   227.3   541.0     801
+
+C. Service-time distribution (same mean 5 min)
+
+deterministic
+                       hi mean  hi p95 lo mean  lo p95  lo max
+FIFO                    106.5   254.0   105.8   255.0     348
+Strict priority           2.9     8.0   150.0   333.0     436
+APQ a=0.02               75.1   217.0   119.2   270.0     369
+APQ a=0.05               93.5   239.0   111.3   261.0     355
+Fast-track (equal cap.)  136.9   362.9   164.5   386.0     583
+
+exponential
+                       hi mean  hi p95 lo mean  lo p95  lo max
+FIFO                    162.2   383.0   160.0   384.0     554
+Strict priority           6.7    22.0   225.5   480.0     607
+APQ a=0.02              125.6   341.0   175.4   400.0     558
+APQ a=0.05              147.3   364.4   166.3   391.0     558
+Fast-track (equal cap.)  157.0   417.4   155.1   394.0     634
+
+lognormal
+                       hi mean  hi p95 lo mean  lo p95  lo max
+FIFO                    169.8   413.0   168.1   410.0     672
+Strict priority          10.6    43.0   238.3   520.0     761
+APQ a=0.02              133.7   370.0   183.8   429.0     700
+APQ a=0.05              155.3   397.0   174.4   417.0     688
+Fast-track (equal cap.)  178.9   504.0   161.2   443.0     772

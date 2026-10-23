@@ -1,0 +1,16 @@
+service_dist,policy,high_mean,high_p95,low_mean,low_p95,low_max
+deterministic,FIFO,106.51,254.0,105.8,255.0,348.0
+deterministic,Strict priority,2.85,8.0,149.97,333.0,436.0
+deterministic,APQ a=0.02,75.06,217.0,119.2,270.0,369.0
+deterministic,APQ a=0.05,93.48,239.0,111.35,261.0,355.0
+deterministic,Fast-track (equal cap.),136.88,362.85,164.53,386.0,583.0
+exponential,FIFO,162.19,383.0,160.03,384.0,554.0
+exponential,Strict priority,6.73,22.0,225.48,480.0,607.0
+exponential,APQ a=0.02,125.63,341.0,175.39,400.0,558.0
+exponential,APQ a=0.05,147.32,364.45,166.28,391.0,558.0
+exponential,Fast-track (equal cap.),157.03,417.45,155.07,394.0,634.0
+lognormal,FIFO,169.79,413.0,168.07,410.0,672.0
+lognormal,Strict priority,10.64,43.0,238.34,520.0,761.0
+lognormal,APQ a=0.02,133.67,370.0,183.82,429.0,700.0
+lognormal,APQ a=0.05,155.34,397.0,174.45,417.0,688.0
+lognormal,Fast-track (equal cap.),178.9,504.0,161.16,443.0,772.0
